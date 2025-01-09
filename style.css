@@ -1,0 +1,252 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f1e9da;
+    width: 100%;
+    height: 100vh;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page-content {
+    width: 90%;
+    max-width: 1200px;
+    height: 80%;
+    border-radius: 15px;
+    background-color: #f1e9da;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: stretch; 
+    gap: 20px;
+    padding: 20px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    background-color: #edf6f9;
+    justify-content: space-around;
+    text-align: center;
+    padding: 30px;
+    border-radius: 15px;
+    flex-shrink: 1;
+    width: 40%;
+    min-width: 300px;
+}
+
+.main-heading {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.sub {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    background-color: #c5d9e2;
+    border-radius: 15px;
+    padding: 20px;
+    width: 60%;
+    justify-content: space-around;
+    align-items: flex-start;
+    height: 100%; 
+}
+
+.heading {
+    width: calc(33% - 40px);
+    max-width: 250px;
+    height: auto;
+    padding: 20px;
+    font-size: 1.5rem;
+    margin: 10px;
+    border-radius: 25px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: 1px solid #c5d9e2; 
+}
+
+.wind-speed,
+.humidity,
+.Feels-like,
+.Visibility,
+.pressure,
+.cloudiness,
+.Temparature-history,
+.sun {
+    width: calc(33% - 40px);
+    max-width: 250px;
+    height: calc(30% - 40px);
+    max-height: 250px;
+    padding: 20px;
+    font-size: 1.5rem;
+    background-color: #507dbc;
+    margin: 10px;
+    border-radius: 25px;
+    /* text-align: center; */
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;*/
+}
+
+.city-name {
+    margin: 0 0 5px 0;
+    width: 80%;
+    max-width: 300px;
+    height: auto;
+    padding: 10px;
+    font-size: 1.5rem;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.city-name:hover {
+    box-shadow: 7px 7px 5px rgb(56, 32, 32);
+}
+
+.search-icon {
+    height: auto;
+    width: 60%;
+    max-width: 200px;
+    margin: 5px 0 0 0;
+    background-color: white;
+    border-radius: 30px;
+    padding: 10px;
+    font-weight: 800;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.search-icon:hover {
+    box-shadow: 5px 5px 3px rgb(51, 29, 29);
+}
+
+.temp {
+    font-size: 4rem;
+}
+
+.Weather-description {
+    font-size: 2rem;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.date {
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.city-name-display {
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+.max-temp,
+.min-temp {
+    display: block;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+    .page-content {
+        flex-direction: column;
+        padding: 10px;
+        gap: 20px;
+    }
+
+    .main,
+    .sub {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .sub {
+        gap: 10px;
+    }
+
+    .heading,
+    .wind-speed,
+    .humidity,
+    .Feels-like,
+    .Visibility,
+    .pressure,
+    .cloudiness,
+    .Temparature-history,
+    .sun {
+        width: calc(50% - 20px);
+        height: calc(50%-20px);
+        font-size: 1.2rem;
+        padding: 15px;
+    }
+
+    .main {
+        padding: 20px;
+    }
+
+    .main-heading {
+        font-size: 2rem;
+    }
+
+    .temp {
+        font-size: 3rem;
+    }
+
+    .Weather-description {
+        font-size: 1.5rem;
+    }
+
+    .date,
+    .city-name-display {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .heading,
+    .wind-speed,
+    .humidity,
+    .Feels-like,
+    .Visibility,
+    .pressure,
+    .cloudiness,
+    .Temparature-history,
+    .sun {
+        width: 100%;
+        height:100%;
+        font-size: 1rem;
+    }
+
+    .main-heading {
+        font-size: 1.8rem;
+    }
+
+    .temp {
+        font-size: 2.5rem;
+    }
+
+    .Weather-description {
+        font-size: 1.2rem;
+    }
+
+    .city-name,
+    .search-icon {
+        width: 100%;
+        font-size: 1rem;
+    }
+}

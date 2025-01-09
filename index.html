@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="page-content">
+    <div class="main">
+        <h1 class="main-heading">Weather Information</h1>
+            <form class="form">
+                <input type="text" placeholder="Seach Weather" class="city-name">
+                <button type="submit" class="search-icon">Get Weather</button>
+            </form>
+        <!-- <div class="Weather-image"></div> -->
+        <div class="temp"><p class="temp_num" style="display: inline-block;"></div>
+        <div class="Weather-description"></div>
+        <div class="date"></div>
+        <div class="city-name-display"></div>
+    </div>
+        <div class="sub">
+            <div class="heading">Today</div>
+            <div class="wind-speed">Wind(in kmph)<p class="wind-speed-value"></p></div>
+            <div class="humidity">Humidity<p class="humidity-value"></p></div>
+            <div class="Feels-like">Feels like<p class="Feels-like-value"></p></div>
+            <div class="Visibility">Visibility(in Km)<p class="visibility-value"></p></div>
+            <div class="pressure">Pressure(in atm)<p class="pressure-value"></p></div>
+            <div class="cloudiness">Cloudiness<p class="cloudiness-value"></p></div>
+            <div class="Temparature-history"><p style="font-size:larger">Temperature</p><p class="max-temp">Max:</p><p class="min-temp">Min:</p></div>
+            <div class="sun"><p style="font-size:larger;">Sun</p><p class="rise-time"></p><p class="set-time"></p></div>
+            <footer>
+                All data obtained from <a href="https://openweathermap.org/api" target="_main">Open Weather API</a>
+            </footer>
+        </div>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
